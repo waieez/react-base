@@ -23,3 +23,15 @@ npm install --save css-loader style-loader
 
 webpack
 ```
+
+
+#### Install React, Set Up Babel
+React is cool. ES6 is cool. React + ES6 = 2 cool for school.
+https://facebook.github.io/react/docs/getting-started.html
+https://babeljs.io/docs/setup/#webpack
+```bash
+npm install --save react react-dom babel-loader babel-core babel-preset-react babel-preset-es2015
+
+# Now is a good time to use webpack-dev server to make life easier
+webpack-dev-server --progress --colors --watch
+```
