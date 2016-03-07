@@ -8,9 +8,11 @@ class Example extends Component {
   }
 
   render () {
+    const {children} = this.props
     return (
       <div>
         <button onClick={() => this.handleClick("OHYEAH")}>EXAMPLE</button>
+        {children}
       </div>
     )
   }

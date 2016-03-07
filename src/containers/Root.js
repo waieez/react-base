@@ -1,13 +1,15 @@
 import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import Example from '../containers/Example'
+import {Provider, connect} from 'react-redux'
+import {Router} from 'react-router'
+import routes from '../routes'
 
 export default class Root extends Component {
   render () {
+    const {store, history} = this.props
     return (
-      <div>
-        <Example></Example>
-      </div>
+      <Provider store={store}>
+        <Router history={history} routes={routes}/>
+      </Provider>
     )
   }
 }
