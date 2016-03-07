@@ -8,9 +8,19 @@ module.exports = {
       path: __dirname,
       filename: "./build/index.js"
     },
+    resolve: {
+      modulesDirectories: [
+        'node_modules',
+        path.resolve(__dirname, './node_modules')
+      ]
+    },
     module: {
         loaders: [
-            { test: /\.js$/, loaders: ["babel-loader"]},
+          {
+            test: /(\.js|\.jsx)$/,
+            exclude: /(node_modules)/,
+            loader: 'babel'
+          },
             { test: /\.css$/, loader: "style!css" }
         ]
     }

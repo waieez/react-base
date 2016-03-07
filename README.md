@@ -35,3 +35,12 @@ npm install --save react react-dom babel-loader babel-core babel-preset-react ba
 # Now is a good time to use webpack-dev server to make life easier
 webpack-dev-server --progress --colors --watch
 ```
+
+## Install Redux
+Redux is simple. Learn all about it here: http://redux.js.org/
+Check out the videos: https://egghead.io/series/getting-started-with-redux
+React-Redux hooks React with Redux and makes life easier!
+
+```bash
+npm install --save redux react-redux
+```
