@@ -1,9 +1,12 @@
 import {combineReducers} from 'redux'
-import example from './example'
 import {routerReducer} from "react-router-redux"
+
+import example from './example'
+import immutableExample from './immutableExample'
 // exports a reducer used to create the store
 export default combineReducers({
   example,
+  immutableExample,
   routing: routerReducer
   // this is es6 syntax and actually is {"example": example}
   // the state changes affected by example will be under state["example"]

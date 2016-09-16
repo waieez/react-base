@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {exampleActionCreator} from '../actions/example'
+import {exampleActionCreator, EXAMPLE} from '../actions/example'
 
 class Example extends Component {
   handleClick (data) {
@@ -11,7 +11,7 @@ class Example extends Component {
     const {children} = this.props
     return (
       <div>
-        <button onClick={() => this.handleClick("OHYEAH")}>EXAMPLE</button>
+        <button onClick={() => this.handleClick(EXAMPLE)}>EXAMPLE</button>
         {children}
       </div>
     )

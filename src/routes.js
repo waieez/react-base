@@ -3,7 +3,7 @@ import {Route} from "react-router"
 
 // CONTAINERS/COMPONENTS
 import Example from "./containers/Example"
-import ImmutableExample from "./components/ImmutableExample"
+import ImmutableExample from "./containers/ImmutableExample"
 
 export default (
   <Route path="/" component={Example}>
